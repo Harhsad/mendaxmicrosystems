@@ -212,6 +212,10 @@ header nav li.custom-dropdown ul li a:hover {
   background-color: #242424;
 }
 
+#header + div, #header + section {
+  margin-top: 88px;
+}
+
 .hero_carousel .content {
   display: flex;
   align-items: flex-start;
@@ -490,6 +494,10 @@ header nav li.custom-dropdown ul li a:hover {
   padding: 60px 0;
 }
 
+.partner .container {
+  width: 75%;
+}
+
 .partner ul {
   display: flex;
   align-items: center;
@@ -500,6 +508,7 @@ header nav li.custom-dropdown ul li a:hover {
 .partner ul li {
   display: inline-flex;
   margin: 0 15px;
+  list-style: none;
 }
 
 footer {
@@ -658,6 +667,8 @@ footer ul.supports {
 .productlist, .productlist.red {
   display: flex;
   background-image: url("../images/productbg1.jpg");
+  background-position: right top;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 466px;
@@ -771,6 +782,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 640px;
 }
 
 .product-box.box-cta:before {
@@ -1032,6 +1044,10 @@ ul.warranty-hyperlink li {
   top: 5px;
 }
 
+.menubar button.close-btn {
+  display: none;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 85%;
@@ -1042,8 +1058,20 @@ ul.warranty-hyperlink li {
   .btn {
     padding: 0.5em 1em;
   }
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2.25em;
+  }
   h2 {
     font-size: 2em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1em;
   }
   nav {
     display: block;
@@ -1051,6 +1079,9 @@ ul.warranty-hyperlink li {
   .sidemenu ul li:nth-child(n+3) {
     display: none;
     z-index: 2;
+  }
+  #header + div, #header + section {
+    margin-top: 60px;
   }
   header nav ul {
     text-align: center;
@@ -1099,6 +1130,7 @@ ul.warranty-hyperlink li {
     margin: 1em;
     border: none;
     background: none;
+    display: block;
   }
   .menubar.active button.close-btn::before {
     content: "";
@@ -1202,6 +1234,34 @@ ul.warranty-hyperlink li {
   .copyright ul {
     justify-content: center;
     margin: 0 0 1em;
+  }
+  .heroheader .content {
+    padding: 1em;
+    margin: 0;
+  }
+  .heroheader .content h1 {
+    font-size: 2.375em;
+  }
+  .heroheader {
+    height: auto;
+  }
+  .heroheader img {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 56% 0;
+  }
+  .wrapper {
+    margin: 2em 0px;
+  }
+  .productlist .content {
+    padding: 1em;
+  }
+  .productlist .content p {
+    font-size: 1em;
   }
 }
 @media (min-width: 768px) {
