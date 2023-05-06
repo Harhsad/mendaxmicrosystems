@@ -52,16 +52,18 @@ $('.testimonial_carousel').owlCarousel({
 $('.partner_carousel').owlCarousel({
     loop:true,
     margin:10,
-    dots:false,
-    nav:true,
+    dots:true,
+    nav:false,
     responsive:{
         0:{
             items:3,
-            margin:10
+            margin:30,
+            autoplay:true
         },
         600:{
             items:3,
-            margin:10
+           margin:30,
+            autoplay:true
         },
         1000:{
             items:6
