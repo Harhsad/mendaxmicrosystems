@@ -353,6 +353,7 @@ header nav li.custom-dropdown ul li a:hover {
 .cta_contact {
   background-image: url("../images/cta1.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: auto;
   min-height: 372px;
@@ -367,6 +368,7 @@ header nav li.custom-dropdown ul li a:hover {
 
 .cta_call {
   background-image: url("../images/cta2.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -507,12 +509,17 @@ footer {
   height: auto;
   padding: 70px 0 0;
   color: #C8C8C8;
+  background-color: #1A1A18;
 }
 
 footer h2 {
   font-size: 1.25em;
   color: #E40613;
   font-weight: bold;
+  margin-bottom: 1em;
+}
+
+footer ul {
   margin-bottom: 1em;
 }
 
@@ -569,7 +576,7 @@ footer ul.supports {
 }
 
 .copyright {
-  margin-top: 70px;
+  margin-top: 50px;
   background: #1A1A18;
   padding: 1em 0;
 }
@@ -586,6 +593,7 @@ footer ul.supports {
 .copyright ul {
   display: flex;
   justify-content: right;
+  margin: 0;
 }
 
 .copyright ul.cards li {
@@ -987,4 +995,222 @@ ul.warranty-hyperlink li {
 
 .accordion-container .content-entry .content-title.active ~ p {
   display: block;
+}
+
+.hamburger {
+  width: 50px;
+  height: 40px;
+  background: #000;
+  position: relative;
+  border-radius: 4px;
+  border: none;
+  margin-right: 15px;
+  padding: 0 10px;
+}
+
+.hamburger span {
+  position: relative;
+}
+
+.hamburger span {
+  position: relative;
+  width: 80%;
+  display: flex;
+  height: 17px;
+  border-color: #fff;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+}
+
+.hamburger span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 125%;
+  left: 0;
+  background: #fff;
+  top: 5px;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 85%;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .btn {
+    padding: 0.5em 1em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  nav {
+    display: block;
+  }
+  .sidemenu ul li:nth-child(n+3) {
+    display: none;
+    z-index: 2;
+  }
+  .sidemenu {
+    z-index: 2;
+    display: none;
+  }
+  header nav ul, header .sidemenu ul {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  header nav li {
+    width: 84%;
+  }
+  header nav li a, header .sidemenu li a {
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    font-size: 1.5rem;
+  }
+  header nav li:nth-child(1) {
+    display: none;
+  }
+  .menubar {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all ease 1s;
+    z-index: 9;
+  }
+  .menubar.active {
+    left: 0;
+  }
+  .menubar.active button.close-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 1em;
+    border: none;
+    background: none;
+  }
+  .menubar.active button.close-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    left: 0;
+    top: 15px;
+  }
+  .menubar.active button.close-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    right: 0;
+    top: 15px;
+  }
+  header .logo img {
+    height: 55px;
+  }
+  .owl-stage-outer.owl-height {
+    height: 350px !important;
+  }
+  .owl-carousel .owl-item img {
+    object-fit: cover !important;
+    height: 350px !important;
+  }
+  .hero_carousel .content {
+    width: 85%;
+    flex-direction: column;
+    left: 20px;
+  }
+  .hero_carousel .content h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+  }
+  .usp {
+    min-height: 250px;
+  }
+  .usp .usp-boxes .s_box {
+    min-height: 150px;
+    padding: 1em;
+  }
+  .usp .usp-boxes .s_box a {
+    font-size: 1.5em;
+  }
+  .products .productinfo, .products .productbox {
+    padding: 1em;
+  }
+  .products .productbox {
+    min-height: auto;
+  }
+  .products .productbox .product-decs {
+    position: relative;
+  }
+  .cta_contact {
+    min-height: auto;
+    padding: 2em 0;
+  }
+  .cta_contact h1 {
+    font-size: 2.5em;
+  }
+  .solutions {
+    padding: 20px 0;
+  }
+  .testimonials {
+    min-height: auto;
+    padding: 20px 0;
+  }
+  .cta_call {
+    min-height: 210px;
+    background-position: -250px center;
+    padding-left: 30px;
+  }
+  .cta_call p.highlight {
+    font-size: 1.8em;
+  }
+  footer h2 {
+    margin-bottom: 0.5em;
+  }
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .copyright ul {
+    justify-content: center;
+    margin: 0 0 1em;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
 }
