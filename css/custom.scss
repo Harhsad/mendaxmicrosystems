@@ -335,8 +335,8 @@ ul.warranty-hyperlink li{ padding: 0.5em 0;  list-style: none;}
     h2{ font-size:2em}
     nav{display: block;}
     .sidemenu ul li:nth-child(n + 3){display: none; z-index: 2;}
-    .sidemenu{z-index: 2; display: none;}
-    header nav ul, header .sidemenu ul {
+    //.sidemenu{z-index: 2; display: none;}
+    header nav ul {
         text-align: center;
         display: flex;
         align-items: flex-start;
@@ -344,6 +344,12 @@ ul.warranty-hyperlink li{ padding: 0.5em 0;  list-style: none;}
     }
     header nav li {
         width: 84%;
+    }
+    header nav li.custom-dropdown:hover ul {
+        display: block;
+        position: relative;
+        padding: 0;
+        top: 0;
     }
     header nav li a, header .sidemenu li a {
         color: #fff;

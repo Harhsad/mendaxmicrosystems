@@ -1052,11 +1052,7 @@ ul.warranty-hyperlink li {
     display: none;
     z-index: 2;
   }
-  .sidemenu {
-    z-index: 2;
-    display: none;
-  }
-  header nav ul, header .sidemenu ul {
+  header nav ul {
     text-align: center;
     display: flex;
     align-items: flex-start;
@@ -1064,6 +1060,12 @@ ul.warranty-hyperlink li {
   }
   header nav li {
     width: 84%;
+  }
+  header nav li.custom-dropdown:hover ul {
+    display: block;
+    position: relative;
+    padding: 0;
+    top: 0;
   }
   header nav li a, header .sidemenu li a {
     color: #fff;
