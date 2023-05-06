@@ -1181,6 +1181,17 @@ ul.warranty-hyperlink li {
   .cta_call p.highlight {
     font-size: 1.8em;
   }
+  .partner_carousel.owl-carousel .owl-item img {
+    width: 100px;
+    height: auto !important;
+  }
+  .partner_carousel li {
+    list-style: none;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   footer h2 {
     margin-bottom: 0.5em;
   }
