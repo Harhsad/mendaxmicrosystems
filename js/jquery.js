@@ -49,6 +49,25 @@ $('.testimonial_carousel').owlCarousel({
         }
     }
 })
+$('.partner_carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    responsive:{
+        0:{
+            items:3,
+            margin:10
+        },
+        600:{
+            items:3,
+            margin:10
+        },
+        1000:{
+            items:6
+        }
+    }
+})
 $('.hero_carousel').owlCarousel({
     items:1,
     margin:10,
