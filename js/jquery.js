@@ -93,6 +93,12 @@ $(document).ready(function(){
         $(this).toggleClass("active");
 
 });
+$("button.hamburger").click(function(){
+    $(".menubar").addClass("active");
+  });
+  $("button.close-btn").click(function(){
+    $(".menubar").removeClass("active");
+  });
 });
 
 
