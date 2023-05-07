@@ -1,5 +1,5 @@
 $('.solutions_carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:30,
     nav:true,
     dots:false,
@@ -33,7 +33,7 @@ $('.usp-boxes').owlCarousel({
     }
 })
 $('.testimonial_carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
     dots:false,
     nav:true,
