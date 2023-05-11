@@ -63,6 +63,10 @@ a {
   text-decoration: none;
 }
 
+.dark-color {
+  color: #000;
+}
+
 .btn-primary {
   background-color: #E40613;
   color: #fff;
@@ -70,6 +74,11 @@ a {
 
 .btn-primary:hover {
   background-color: #E40613;
+}
+
+.btn-secondary {
+  background-color: inherit;
+  color: #1A1A18;
 }
 
 .btn-link, .btn-link-white {
@@ -86,7 +95,11 @@ a {
   color: #fff;
 }
 
-.btn-link::after, .btn-link-white::after {
+.btn-link-black {
+  color: #1A1A18;
+}
+
+.btn-link::after, .btn-link-white::after, .btn-link-black::after {
   content: "";
   position: relative;
   margin: 0.5em;
@@ -99,6 +112,11 @@ a {
 
 .btn-link-white::after {
   background-image: url("../images/small-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-link-black::after {
+  background-image: url("../images/small-arrow-black.svg");
   background-repeat: no-repeat;
 }
 
@@ -648,7 +666,8 @@ footer ul.supports {
 }
 
 .wrapper {
-  margin: 5em 0;
+  margin: 3em 0;
+  min-height: 420px;
 }
 
 .heroheader {
@@ -1138,6 +1157,567 @@ ul.warranty-hyperlink li {
   margin: 0.5em 0;
 }
 
+.cart-page {
+  background: #F4F6F9;
+}
+
+.cart-boxes {
+  background: #fff;
+  margin-bottom: 2em;
+  border-radius: 6px;
+}
+
+.cart-boxes hr {
+  border-color: #dfdfdf;
+}
+
+.cart-boxes .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.cart-boxes .box .product-info {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-boxes .product-price {
+  color: #E40613;
+  text-align: right;
+}
+
+.cart-boxes .product-total {
+  color: #1A1A18;
+  padding: 1em 2em;
+  text-align: right;
+}
+
+.cart-boxes .box a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.cart-boxes.remove-btn {
+  display: flex;
+  align-items: center;
+}
+
+.cart-boxes .remove-btn img {
+  margin-right: 5px;
+}
+
+.summary-box {
+  background: #fff;
+  margin-bottom: 2em;
+  border-radius: 6px;
+  padding: 2em 1em;
+}
+
+.summary-box .order {
+  margin: 1em 0 0;
+}
+
+.summary-box h6 {
+  font-weight: bold;
+}
+
+.summary-box ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 0 1em 0 !important;
+}
+
+.summary-box ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+
+.summary-box ul li span:nth-child(2) {
+  color: #1A1A18;
+}
+
+.summary-box .esti-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #1A1A18;
+  padding: 1em 0;
+}
+
+.summary-box .terms {
+  font-size: 0.8em;
+  color: #666666;
+  margin: 1em 0;
+}
+
+.wrapper .summary-box .btn {
+  color: #fff !important;
+  width: 100%;
+  display: block;
+  text-decoration: none !important;
+  text-align: center !important;
+  text-transform: inherit;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+.input-group.coupon-code {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.input-group.coupon-code input {
+  border-radius: 0;
+}
+
+.input-group.coupon-code .btn {
+  width: auto;
+  padding: 0.5em 1em;
+}
+
+.wrapper .page-info ul.checkout-process {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.wrapper .page-info ul.checkout-process li {
+  position: relative;
+  margin-right: 1.2em;
+}
+
+.wrapper .page-info ul.checkout-process li::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 3px;
+  background: #C8C8C8;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: -27px;
+}
+
+.wrapper .page-info ul.checkout-process li:last-child::before {
+  display: none;
+}
+
+.wrapper .page-info ul.checkout-process li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.wrapper .page-info ul.checkout-process li span {
+  width: 23px;
+  height: 23px;
+  border: #666666 solid 1px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 1em;
+}
+
+.wrapper .page-info ul.checkout-process li.active span {
+  background: #E40613;
+  border-color: #E40613;
+  color: #fff;
+}
+
+.wrapper .page-info ul.checkout-process li.active a {
+  font-weight: bold;
+  color: #1A1A18;
+}
+
+.shipping-info h5 {
+  margin: 2em 0 1em 0;
+}
+
+.shipping-info .shipping-checkout-box {
+  background: #fff;
+  border: #EFEFEF solid 1px;
+  border-radius: 6px;
+  padding: 1.5em;
+}
+
+.shipping-info .shipping-checkout-box h6 {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.shipping-info .shipping-checkout-box h6 span {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  padding-right: 0.5em;
+  font-weight: bold;
+}
+
+.shipping-info .shipping-checkout-box h6:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #EFEFEF;
+  display: block;
+  position: absolute;
+  top: 13px;
+  z-index: 1;
+}
+
+.shipping-info .shipping-checkout-box .ex-checkout-btn a:first-child {
+  margin-left: 0;
+}
+
+.shipping-info .shipping-checkout-box .ex-checkout-btn a {
+  display: inline-flex;
+  margin: 0 0.5em;
+}
+
+.shipping-info .shipping-checkout-box label {
+  color: #666666;
+}
+
+.shipping-info .info-box {
+  background: #fff;
+  border: #EFEFEF solid 1px;
+  border-radius: 6px;
+  padding: 1.5em;
+}
+
+.shipping-info .info-box .card-lists {
+  display: flex;
+}
+
+.shipping-info .info-box .card-lists a {
+  margin-right: 0.5em;
+}
+
+.shipping-info .info-box .title, .shipping-info .shipping-checkout-box .title {
+  color: #E40613;
+  font-weight: bold;
+}
+
+.shipping-info .input-group.cvv-label-group {
+  border: #C4C4C4 solid 1px;
+  border-radius: 6px;
+}
+
+.shipping-info .input-group.cvv-label-group input, .shipping-info .input-group.cvv-label-group .input-group-text {
+  border: none;
+  background: #fff;
+}
+
+.shipping-info .info-box .card-info {
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+}
+
+.shipping-info .info-box .card-info div {
+  margin-bottom: 0.2em;
+}
+
+.shipping-info .info-box .profile-info {
+  color: #5B5B5B;
+}
+
+.shipping-info .review-checkout-box {
+  padding: 0;
+}
+
+.shipping-info .review-checkout-box .review-title-edit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-info .review-checkout-box .review-title-edit h6 {
+  font-weight: bold;
+}
+
+.shipping-info .review-checkout-box .review-title-edit a {
+  color: #337FFF;
+  text-decoration: none;
+}
+
+.shipping-info .review-checkout-box .cart-boxes .product-total {
+  text-align: left;
+}
+
+.wrapper .order-placed h2 {
+  font-weight: bold;
+}
+
+.wrapper .order-placed h2 span {
+  position: absolute;
+  left: -1.7em;
+}
+
+.wrapper .order-placed h2::after {
+  display: none;
+}
+
+.wrapper .order-placed .btn-link-white {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper .order-placed .btn-link-black {
+  background: none;
+  border: #1A1A18 solid 1px;
+  text-decoration: none;
+  color: #1A1A18;
+}
+
+.order-placed .buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.account {
+  background: #F4F6F9;
+}
+
+.wrapper .account-order h2 {
+  font-weight: bold;
+}
+
+.wrapper .account-order h2::after {
+  display: none;
+}
+
+.wrapper .account-order .latest-order .order-box {
+  border: #EFEFEF solid 1px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.wrapper .account-order .latest-order h6 {
+  font-weight: bold;
+}
+
+.wrapper .account-order .latest-order .order-box .date-price, .wrapper .account-order .latest-order .order-box .order-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6em 1.5em;
+  border-bottom: #EFEFEF solid 1px;
+  align-items: center;
+}
+
+.wrapper .account-order .latest-order .order-box .date-price p, .wrapper .account-order .latest-order .order-box .order-details p {
+  margin: 0;
+}
+
+.wrapper .account-order .latest-order .order-box .order-details {
+  border-top: #EFEFEF solid 1px;
+  border-bottom: none;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2em 1.5em;
+  align-items: flex-start;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details img {
+  width: 160px;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details .product-description {
+  margin: 0 auto 0 2em;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details h6 {
+  color: #E40613;
+  font-weight: bold;
+  display: inline-flex;
+  margin-left: 0;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details .product-description h6 {
+  font-weight: normal;
+  color: #1A1A18;
+}
+
+.wrapper .account-order .latest-order .order-box .product-details .product-description p {
+  margin-bottom: 0;
+}
+
+.wrapper .account-order .latest-order .order-box .order-details a {
+  text-decoration: underline;
+  font-weight: bold;
+  position: relative;
+}
+
+.wrapper .account-order .latest-order .order-box .order-details a:after {
+  content: "";
+  width: 9px;
+  height: 21px;
+  background: url(../images/order-arrow.svg);
+  display: inline-flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.wrapper .account-order .account-nav h5 {
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.wrapper .account-order .account-nav ul {
+  padding: 0;
+  margin: 0;
+  min-height: 330px;
+  background: #fff;
+}
+
+.wrapper .account-order .account-nav ul li {
+  list-style: none;
+}
+
+.wrapper .account-order .account-nav ul li a {
+  border-bottom: #C8C8C8 solid 1px;
+  width: 100%;
+  display: block;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  background: #fff;
+  font-weight: bold;
+  color: #1A1A18;
+}
+
+.wrapper .account-order .account-nav ul li:last-child a {
+  border: none;
+}
+
+.wrapper .account-order .account-nav ul li.active a {
+  background: #E40613;
+  color: #fff;
+}
+
+.wrapper .account-order .account-nav ul li i {
+  margin-right: 10px;
+}
+
+.wrapper .account-order .account-boxes {
+  background: #fff;
+  border: #fff solid 1px;
+  padding: 2em 2em 2em 4em;
+  margin: 0 0.5em;
+  min-height: 224px;
+}
+
+.wrapper .account-order .account-boxes:hover {
+  border: #E40613 solid 1px;
+}
+
+.wrapper .account-order .account-boxes h6 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #E40613;
+  position: relative;
+}
+
+.wrapper .account-order .account-boxes h6 i {
+  position: absolute;
+  left: -31px;
+  top: -1px;
+}
+
+.wrapper .account-order .account-boxes p {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.wrapper .account-order .account-boxes a {
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+.wrapper .account-order .account-boxes a::after {
+  content: "";
+  width: 9px;
+  height: 21px;
+  background: url(../images/order-arrow.svg);
+  display: inline-flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.wrapper .account-order .payment-methods .default-card {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.wrapper .account-order .payment-methods .default-card p {
+  font-weight: bold;
+  font-size: 1.125em;
+  margin: 0;
+}
+
+.wrapper .account-order .payment-methods .default-card span {
+  color: #337FFF;
+  font-size: 0.875em;
+  background: #E9F1FF;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 6px;
+}
+
+.wrapper .account-order .payment-methods .edit-del {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wrapper .account-order .payment-methods .edit-del a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wrapper .account-order .payment-methods .info-box .profile-info h6 {
+  margin-bottom: 0.6em;
+}
+
+.wrapper .account-order .payment-methods .info-box .profile-info h6::after {
+  display: none;
+}
+
+.wrapper .account-order .payment-methods .card-info-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper .account-order .payment-methods .add-card a {
+  background: #fff;
+  font-size: 1.125em;
+  font-weight: bold;
+  color: #E40613;
+  padding: 1.5em 1em;
+  border: #1A1A18 dashed 1px;
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  text-decoration: none;
+}
+
+.wrapper .account-order .payment-methods .add-card span {
+  margin-right: 5px;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 85%;
@@ -1391,7 +1971,7 @@ ul.warranty-hyperlink li {
     object-position: 56% 0;
   }
   .wrapper {
-    margin: 2em 0px;
+    margin: 3em 0px;
   }
   .productlist .content {
     padding: 1em;
@@ -1438,5 +2018,8 @@ ul.warranty-hyperlink li {
   }
   .buywith_box {
     padding-right: 2em;
+  }
+  .wrapper .order-placed {
+    margin: 4em;
   }
 }
