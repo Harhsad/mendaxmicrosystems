@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Payment - Mendax MicroSystems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html");
+});
+</script>  
+</head>
+<body class="cart-page">
+
+    <div id="header"></div>
+
+<div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> / Checkout
+    </div>
+</div>
+
+<div class="wrapper">
+   
+<div class="container">
+<div class="page-info">
+    <div class="row justify-content-left mb-4">
+        <div class="col-12 col-sm-10">
+          <h1>Checkout</h1>
+            </div> 
+            </div>
+           <div class="row g-3">
+        <div class="col-12 col-sm-7">
+            <ul class="checkout-process mb-4">
+            <li class="active"><a href="checkout-shipping.html"><span>1</span> Shipping</a></li> 
+            <li class="active"><a href="checkout-payment.html"><span>2</span> Delivery</a></li> 
+            <li><a href="#" class="disabled-link"><span>3</span> Payment</a></li> 
+            <li><a href="#" class="disabled-link"><span>4</span> Review</a></li>    
+            </ul>
+            <div class="shipping-info">
+          <h5><b>Payment</b></h5>
+          <div class="shipping-checkout-box mb-4">
+            <div class="card-info">
+            <h6><span>Credit Card Information</span></h6>
+            <div class="info-box mb-4">
+              <p class="title">Select a Card</p>
+              <p class="p-0">We accept the following cards.</p>
+              <div class="card-lists">
+              <a href="#"><img src="images/american-express-card.png" alt=""></a>
+              <a href="#"><img src="images/mastercard-card.png" alt=""></a>
+              <a href="#"><img src="images/visa-card.png" alt=""></a>
+              <a href="#"><img src="images/paypal-card.png" alt=""></a>
+            </div>
+            <div class="row justify-content-start mt-4">
+<div class="col-12 col-sm-6">
+  <div class="mb-1">
+    <label for="exampleFormControlInput1" class="form-label">Card Number</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+</div>
+</div>
+<div class="row justify-content-start mt-4">
+  <div class="col-12 col-sm-3">
+    <div class="mb-1">
+      <label for="exampleFormControlInput1" class="form-label">Expiry Month</label>
+      <select id="exampleFormControlInput1" class="form-select">
+        <option selected>1</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-12 col-sm-3">
+    <div class="mb-1">
+      <label for="exampleFormControlInput1" class="form-label">Expiry Year</label>
+      <select id="exampleFormControlInput1" class="form-select">
+        <option selected>2023</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div>  
+  </div>
+  <div class="row justify-content-start mt-4">
+    <div class="col-12 col-sm-3">
+      <div class="mb-1">
+        <label for="exampleFormControlInput1" class="form-label">CVV</label>
+        <div class="input-group cvv-label-group">
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+        <div class="input-group-text "><img src="images/cvv-icon.png" alt=""></div>
+      </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-3 mt-4 form-text">
+    This 3 or 4 digit code is on the back or front of your card.</div>
+     
+    </div>
+
+
+
+            </div>
+<div class="info-box mb-4">
+  <div class="card-info">
+    <div><img src="images/visa-card.png" alt=""></a></div>
+    <div>**** **** **** 4318</div>
+    <div>Expires 9/25</div>
+    <div>CVV</div>
+    <div>***</div>
+
+  </div>
+  
+
+</div>
+</div>
+<hr>
+<h6><span>Billing Address</span></h6>
+<div class="info-box mb-4">
+<div class="profile-info">
+ <div><b>Harshad M Prajapati - 3343 26 Ave NW</b></div>
+ <div>Harshad M Prajapati prajapati</div>
+ <div>3343 26 Ave NW,</div>
+ <div>Edmonton, AB, T6T1R1</div>
+ <div>(096) 017-7009</div>
+</div>
+</div>
+
+
+<div class="shipping-checkout-box mb-4">
+  <p class="title">New Address</p>
+  <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">* First Name</label>
+        <input type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">* Last Name</label>
+        <input type="text" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">* Phone Number</label>
+          <input type="number" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Ext. (Optional)</label>
+          <input type="text" class="form-control" id="inputPassword4">
+        </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+        <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-3">
+        <label for="inputState" class="form-label">Province</label>
+        <select id="inputState" class="form-select">
+          <option selected>Select...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="inputZip" class="form-label">Postal Code</label>
+        <select id="inputState" class="form-select">
+          <option selected>Select...</option>
+          <option>...</option>
+        </select>
+      </div> </form>
+ 
+
+</div>
+
+
+  </div>    
+          <hr>    
+
+        </div> 
+            
+
+
+</div>
+
+<div class="col-12 col-sm-3">
+      <div class="summary-box">
+<div class="coupons">
+<h6>Coupons</h6>
+<div class="input-group coupon-code mb-4">
+    <input type="text" class="form-control" placeholder="Enter Coupon" aria-label="Enter Coupon" aria-describedby="button-addon2">
+    <button class="btn btn-primary" type="button" id="button-addon2">Apply Coupon</button>
+  </div>
+</div>
+<hr>
+<div class="order">
+    <h6>Order Summary</h6>
+    <ul>
+     <li><span>Product Subtotal</span> <span>$5,598.00</span></li>   
+     <li><span>Estimated Shipping</span> <span>Calculated during checkout</span></li>   
+     <li><span>Tax 1 (5%)</span> <span>$150.00</span></li>   
+     <li><span>Tax 2 (9.98%)</span> <span>$299.25</span></li>   
+    </ul>
+</div>
+
+
+        <hr>
+        <div class="esti-total">
+            <span>Estimated Total</span><span>$6047.25</span>
+        </div>
+        <hr>
+        <div class="terms">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    I agree with the terms of service and I adhere to them unconditionally
+                </label>
+              </div>
+        </div>
+
+        <a href="checkout-review.html" class="btn btn-primary">Continue to Checkout</a>
+
+
+      </div> 
+    </div>
+    
+    
+    </div>
+
+
+
+
+        </div>
+       
+         </div>
+</div>
+          </div>
+</div>   
+   </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div id="footer"></div>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.js"></script>
+</body>
+</html>
