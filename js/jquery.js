@@ -77,6 +77,23 @@ $('.hero_carousel').owlCarousel({
     nav:false,
     autoHeight:true
 })
+$('.products_carousel').owlCarousel({
+    loop:false,
+    margin:0,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:10
+        }
+    }
+})
 
 /**
      * Replace all SVG images with inline SVG
@@ -120,6 +137,18 @@ $("button.hamburger").click(function(){
   $("button.close-btn").click(function(){
     $(".menubar").removeClass("active");
   });
+});
+
+//plus minus jquery//
+$('.add').click(function () {
+    if ($(this).prev().val() < 9) {
+    $(this).prev().val(+$(this).prev().val() + 1);
+    }
+});
+$('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
 });
 
 
