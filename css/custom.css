@@ -490,13 +490,13 @@ header nav li.custom-dropdown ul li a:hover {
   padding: 1em 0;
 }
 
-.testimonial_carousel .owl-nav {
+.testimonial_carousel .owl-nav, .products_carousel .owl-nav {
   position: absolute;
   top: -6.5em;
   right: 1em;
 }
 
-.testimonial_carousel .owl-nav button, .solutions_carousel .owl-nav button {
+.testimonial_carousel .owl-nav button, .solutions_carousel .owl-nav button, .products_carousel .owl-nav button {
   width: 40px;
   height: 40px;
   background: rgba(217, 217, 217, 0.5) !important;
@@ -505,12 +505,12 @@ header nav li.custom-dropdown ul li a:hover {
   overflow: hidden;
 }
 
-.testimonial_carousel .owl-nav button span, .solutions_carousel .owl-nav button span {
+.testimonial_carousel .owl-nav button span, .solutions_carousel .owl-nav button span, .products_carousel .owl-nav button span {
   text-indent: -999px !important;
   display: block;
 }
 
-.testimonial_carousel .owl-nav button.owl-prev span, .testimonial_carousel .owl-nav button.owl-next span, .solutions_carousel .owl-nav button.owl-prev span, .solutions_carousel .owl-nav button.owl-next span {
+.testimonial_carousel .owl-nav button.owl-prev span, .testimonial_carousel .owl-nav button.owl-next span, .solutions_carousel .owl-nav button.owl-prev span, .solutions_carousel .owl-nav button.owl-next span, .products_carousel .owl-nav button.owl-prev span, .products_carousel .owl-nav button.owl-next span {
   width: 10px;
   height: 10px;
   border: #666666 solid 1px;
@@ -519,7 +519,7 @@ header nav li.custom-dropdown ul li a:hover {
   margin: 0 1em;
 }
 
-.testimonial_carousel .owl-nav button.owl-next span, .solutions_carousel .owl-nav button.owl-next span {
+.testimonial_carousel .owl-nav button.owl-next span, .solutions_carousel .owl-nav button.owl-next span, .products_carousel .owl-nav button.owl-next span {
   border-width: 1px 1px 0 0;
   margin: 0 0.7em;
 }
@@ -872,12 +872,12 @@ hr {
   margin: 0.5em 0 0;
 }
 
-.wrapper .page-info h2 {
+.wrapper .page-info h2.title-line {
   position: relative;
   display: inline-block;
 }
 
-.wrapper .page-info h2::after {
+.wrapper .page-info h2.title-line::after {
   content: "";
   display: block;
   border-top: #E40613 solid 2px;
@@ -887,6 +887,10 @@ hr {
 
 .wrapper .page-info p {
   color: #666;
+}
+
+.wrapper p.primary-color {
+  color: #E40613;
 }
 
 .wrapper .page-info .location-info {
@@ -941,6 +945,11 @@ hr {
 .wrapper .page-info a {
   color: #E40613;
   text-decoration: underline;
+}
+
+.wrapper .page-info a.btn {
+  color: #fff;
+  text-decoration: none;
 }
 
 .wrapper .page-info .contactpage-form {
@@ -1716,6 +1725,196 @@ ul.warranty-hyperlink li {
 
 .wrapper .account-order .payment-methods .add-card span {
   margin-right: 5px;
+}
+
+.wrapper .product-details .product-carouel img {
+  max-width: 100%;
+}
+
+.wrapper .product-details .product-info p {
+  font-size: 1.125em;
+}
+
+.wrapper .product-details .product-info li {
+  margin-bottom: 0.4em;
+}
+
+.wrapper .product-details .availability-date ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .qty-cart {
+  margin: 1em 0;
+  display: flex;
+  column-gap: 15px;
+}
+
+.wrapper .qty-cart .plus-min button {
+  background: #C8C8C8;
+  min-height: 50px;
+  min-width: 30px;
+  border: none;
+  font-weight: bold;
+}
+
+.wrapper .qty-cart .plus-min input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: #D9D9D9 solid 1px;
+}
+
+.wrapper .qty-cart .button .btn {
+  padding: 12px 15px;
+}
+
+.wrapper .product-details .product-content h5 {
+  border-bottom: #C8C8C8 solid 1px;
+  display: inline-flex;
+  line-height: 1.5;
+  margin-bottom: 0.8em;
+}
+
+.wrapper .product-content p.primary-color {
+  margin-bottom: 0.5em;
+}
+
+.product-var {
+  position: relative;
+}
+
+.product-var.list-header {
+  width: 140px;
+  position: relative;
+}
+
+.product-var.list-header ul {
+  background: #F5F6F7;
+}
+
+.product-var h6 {
+  color: #1A1A18;
+  font-weight: bold;
+}
+
+.product-var ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: #C8C8C8 solid 1px;
+}
+
+.product-var ul li {
+  text-align: left;
+  font-size: 0.875em;
+  padding: 5px;
+  border-bottom: #C8C8C8 solid 1px;
+  min-height: 55px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.product-var ul li.item-info span.price {
+  color: #1A1A18 !important;
+}
+
+.product-var ul li.item-info span.stock {
+  font-size: 0.75em;
+  display: block;
+  margin: 0.4em 0;
+}
+
+.product-var ul li.item-info span.stock span.green, .product-var ul li.item-info span.stock span.red {
+  width: 5px;
+  height: 5px;
+  background: #16AC52;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.product-var ul li.item-info span.stock span.red {
+  background-color: red;
+}
+
+.product-var ul li.item-info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-var ul li.item-info a.btn {
+  padding: 5px 15px !important;
+  margin-bottom: 5px;
+}
+
+.wrapper .products_carousel {
+  width: 90%;
+}
+
+.products_carousel .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: -15px;
+  transform: scale(0.8);
+}
+
+.product-lists {
+  display: flex;
+}
+
+.wrapper .product-content .spec-info {
+  display: flex;
+  column-gap: 50px;
+}
+
+.wrapper .product-content .spec-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .product-content .spec-info h5 {
+  border: none;
+}
+
+.wrapper .product-content .spec-info p {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper .product-content .spec-info-box:first-child {
+  border-top: #C8C8C8 solid 1px;
+  border-bottom: #C8C8C8 solid 1px;
+}
+
+.wrapper .product-content .spec-info-box {
+  border-bottom: #C8C8C8 solid 1px;
+}
+
+.wrapper .product-content .spec-info-box ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+
+.wrapper .product-content .spec-info-box ul li {
+  padding: 8px 10px;
+}
+
+.wrapper .product-content .spec-info-box ul li.title {
+  background: #EFEFEF;
+  min-width: 200px;
+  width: 200px;
+}
+
+.wrapper .product-content .spec-info-box ul li.desc {
+  color: #666666;
 }
 
 @media (max-width: 767px) {
