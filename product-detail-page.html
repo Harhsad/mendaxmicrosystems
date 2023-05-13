@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -22,6 +26,7 @@
             $("#footer").load("footer.html");
                 });
     </script>
+    
 </head>
 
 <body>
@@ -41,10 +46,56 @@
                 <div class="row justify-content-left mb-4">
              
 <div class="col-12 col-sm-5">
-<div class="product-carouel">
-<img src="images/proudct-box.jpg" alt="">
+    <div class="content-carousel">
+    <div class="owl-carousel product-carouel">
+        <div> <img src="https://tractive.com/blog/wp-content/uploads/2016/06/dog-would-not-drink-water-puppy-waterbowl-768x576.jpg"> </div>
+        <div> <img src="https://dummyimage.com/600x400/16c1f3/231f20.png&text=Carousel"> </div>
+        <div> <img src="https://dummyimage.com/600x400/fff200/231f20.png&text=Carousel"> </div>
+        <div> <img src="https://dummyimage.com/600x400/f48480/231f20.png&text=Carousel"> </div>
+        <div><img src="https://dummyimage.com/600x400/8dd8f8/231f20.png&text=Carousel"> </div>
+        <div><img src="https://dummyimage.com/600x400/fffac2/231f20.png&text=Carousel"> </div>
+      </div>
+    </div>
 </div>
-</div>
+
+<script>
+ $(document).ready(function(){
+
+$(".owl-carousel").owlCarousel({    
+    loop:true,
+    items:1,
+    margin:0,
+    stagePadding: 0,
+    autoplay:false  
+});
+
+dotcount = 1;
+
+jQuery('.owl-dot').each(function() {
+    jQuery( this ).addClass( 'dotnumber' + dotcount);
+    jQuery( this ).attr('data-info', dotcount);
+    dotcount=dotcount+1;
+});
+
+slidecount = 1;
+
+jQuery('.owl-item').not('.cloned').each(function() {
+    jQuery( this ).addClass( 'slidenumber' + slidecount);
+    slidecount=slidecount+1;
+});
+
+jQuery('.owl-dot').each(function() {	
+    grab = jQuery(this).data('info');		
+    slidegrab = jQuery('.slidenumber'+ grab +' img').attr('src');
+    jQuery(this).css("background-image", "url("+slidegrab+")");  	
+});
+
+amount = $('.owl-dot').length;
+gotowidth = 100/amount;			
+jQuery('.owl-dot').css("height", gotowidth+"%");
+
+});
+</script>
 
 <div class="col-12 col-sm-3">
  <div class="product-info">
@@ -583,6 +634,21 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script>
+        $('.add').click(function () {
+    if ($(this).prev().val() < 9) {
+    $(this).prev().val(+$(this).prev().val() + 1);
+    }
+});
+$('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+});
+    </script>
+   
+
+
 </body>
 
 </html>
