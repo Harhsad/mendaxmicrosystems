@@ -586,7 +586,6 @@ ul.warranty-hyperlink li{ padding: 0.5em 0;  list-style: none;}
 .wrapper .account-order .payment-methods .card-info-details{ display: flex; justify-content: space-between; width: 100%;}
 .wrapper .account-order .payment-methods .add-card a{ background: #fff; font-size: 1.125em; font-weight: bold; color: $primary-color; padding: 1.5em 1em; border:#1A1A18 dashed 1px; width: 100%; border-radius: 6px; display: block; text-decoration: none;}
 .wrapper .account-order .payment-methods .add-card span{ margin-right: 5px;} 
-.wrapper .product-details .product-carouel img{max-width: 100%;}
 .wrapper .product-details .product-info p{ font-size: 1.125em;}
 .wrapper .product-details .product-info li{ margin-bottom: 0.4em;}
 .wrapper .product-details .availability-date ul{ list-style: none; margin:0; padding: 0}
@@ -653,7 +652,33 @@ ul.warranty-hyperlink li{ padding: 0.5em 0;  list-style: none;}
 .wrapper .product-content .spec-info-box ul li{ padding: 8px 10px;}
 .wrapper .product-content .spec-info-box ul li.title{ background: #EFEFEF; min-width: 200px; width: 200px;}
 .wrapper .product-content .spec-info-box ul li.desc{color:#666666}
-
+.product-carouel.owl-carousel {
+	width: calc(100% - 75px);
+}
+.product-carouel.owl-carousel div {
+	width: 100%;
+}
+.product-carouel.owl-carousel .owl-controls .owl-dot {
+	background-size: cover;
+	margin-top: 10px;
+}
+.product-carouel.owl-carousel .owl-dots {
+	position: absolute;
+	top: 0;
+	left: -75px;
+	width: 70px;
+	height: 100%;
+}
+.product-carouel.owl-carousel .owl-dot {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.content-carousel {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
 
 //responsiveness
 // Small devices (landscape phones, 576px and up)

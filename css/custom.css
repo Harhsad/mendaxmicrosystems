@@ -1727,10 +1727,6 @@ ul.warranty-hyperlink li {
   margin-right: 5px;
 }
 
-.wrapper .product-details .product-carouel img {
-  max-width: 100%;
-}
-
 .wrapper .product-details .product-info p {
   font-size: 1.125em;
 }
@@ -1915,6 +1911,39 @@ ul.warranty-hyperlink li {
 
 .wrapper .product-content .spec-info-box ul li.desc {
   color: #666666;
+}
+
+.product-carouel.owl-carousel {
+  width: calc(100% - 75px);
+}
+
+.product-carouel.owl-carousel div {
+  width: 100%;
+}
+
+.product-carouel.owl-carousel .owl-controls .owl-dot {
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.product-carouel.owl-carousel .owl-dots {
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 70px;
+  height: 100%;
+}
+
+.product-carouel.owl-carousel .owl-dot {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-carousel {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
