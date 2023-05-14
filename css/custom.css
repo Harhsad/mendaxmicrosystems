@@ -178,6 +178,10 @@ header nav li {
   margin: 0 30px;
 }
 
+header nav li.my-account {
+  display: none;
+}
+
 header .sidemenu li {
   display: inline-block;
   margin: 0 12px;
@@ -2392,6 +2396,9 @@ a.empty-cart {
   .login.secure-checkout .wrapper .login-info .login-box {
     padding: 0;
   }
+  header nav li.my-account {
+    display: block;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .contact-office {
@@ -2542,6 +2549,9 @@ a.empty-cart {
   .login .wrapper .login-info .login-box {
     min-width: auto;
     padding: 2em;
+  }
+  header nav li.my-account {
+    display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1400px) {

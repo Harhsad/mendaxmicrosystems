@@ -44,6 +44,7 @@ header .container{display: flex; align-items: center; justify-content: space-bet
 header .logo { padding: 0.5em;}
 header nav ul, header .sidemenu ul{ text-align:center; display: flex; align-items: center;}
 header nav li{display: inline-block; margin: 0 30px;}
+header nav li.my-account{ display: none;}
 header .sidemenu li{display: inline-block; margin: 0 12px; position: relative;}
 header .sidemenu li.cart{ margin-right: 1.2em;}
 header .sidemenu li.phone{ font-size:1.5em; color: $primary-color; font-weight: bold;}
@@ -907,6 +908,7 @@ a.empty-cart{ text-decoration: none !important;}
         padding: 2em;
     }
     .login.secure-checkout .wrapper .login-info .login-box{ padding: 0;}
+    header nav li.my-account{ display: block;}
     
 
  }
@@ -1018,6 +1020,7 @@ a.empty-cart{ text-decoration: none !important;}
         min-width: auto;
         padding: 2em;
     }
+    header nav li.my-account{ display: block;}
     
 
 }
