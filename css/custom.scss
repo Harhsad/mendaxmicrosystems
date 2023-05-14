@@ -478,7 +478,9 @@ a.empty-cart{ text-decoration: none !important;}
     top: 13px;
     z-index: 1;
 }
+.shipping-info .shipping-checkout-box .ex-checkout-btn a{display: flex;}
 .shipping-info .shipping-checkout-box .ex-checkout-btn a:first-child{ margin-left: 0;}
+.shipping-info .shipping-checkout-box .ex-checkout-btn img{max-width: 100%;}
 .shipping-info .shipping-checkout-box .ex-checkout-btn a{ display: inline-flex; margin: 0 0.5em;}
 .shipping-info .shipping-checkout-box label{ color: #666666; }
 .shipping-info .info-box{background: #fff; border: #EFEFEF solid 1px; border-radius: 6px; padding: 1.5em;}
@@ -914,7 +916,12 @@ a.empty-cart{ text-decoration: none !important;}
         gap: 30px;
         flex-direction: column;
     }
-    
+    .shipping-info .shipping-checkout-box .ex-checkout-btn{display: flex; gap: 5px;}
+    .shipping-info .shipping-checkout-box .ex-checkout-btn img{ max-width: 100%;}
+    .shipping-info .shipping-checkout-box .ex-checkout-btn a{ margin: 0;}
+    .wrapper .page-info ul.checkout-process li::before{width:48px}
+    .wrapper .account-order .account-nav ul{ min-height: auto;}
+        
 
  }
 
