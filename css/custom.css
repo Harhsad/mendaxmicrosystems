@@ -2399,6 +2399,11 @@ a.empty-cart {
   header nav li.my-account {
     display: block;
   }
+  .cart-boxes .box .product-info {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .contact-office {

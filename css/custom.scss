@@ -909,6 +909,11 @@ a.empty-cart{ text-decoration: none !important;}
     }
     .login.secure-checkout .wrapper .login-info .login-box{ padding: 0;}
     header nav li.my-account{ display: block;}
+    .cart-boxes .box .product-info {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
     
 
  }
