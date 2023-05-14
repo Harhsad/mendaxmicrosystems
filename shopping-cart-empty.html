@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart Empty - Mendax MicroSystems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html");
+});
+</script>  
+</head>
+<body class="cart-page">
+
+    <div id="header"></div>
+
+<div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> / Shopping Cart
+    </div>
+</div>
+
+<div class="wrapper">
+   
+<div class="container">
+<div class="page-info">
+    <div class="row justify-content-left mb-4">
+        <div class="col-12 col-sm-10">
+            <h1>Your Cart</h1>
+            </div> 
+            </div>
+           <div class="row g-3">
+        <div class="col-12 col-sm-7">
+            <h5>Your Shopping Cart Is Empty</h5>
+            <p><a href="login.html" class="empty-cart">Sign-in</a> to show your saved Shopping Items.</p>
+
+</div>
+
+    
+    </div>
+
+
+
+
+        </div>
+       
+         </div>
+</div>
+          </div>
+</div>   
+   </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div id="footer"></div>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+    $('.add').click(function () {
+if ($(this).prev().val() < 9) {
+$(this).prev().val(+$(this).prev().val() + 1);
+}
+});
+$('.sub').click(function () {
+if ($(this).next().val() > 1) {
+if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+}
+});
+</script>
+</body>
+</html>

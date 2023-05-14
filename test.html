@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 
 
 
@@ -29,46 +31,166 @@
 
 <body>
 
-    <div id="header"></div>
 
     <div class="breadcrumb">
         <div class="container">
             <a href="index.html">Home</a> / <a href="all-products.html">Products</a> / <a href="short-depth-rugged-servers.html">Short Depth Servers</a> / ShortServ 2080R (2080R-15)
         </div>
     </div>
+<style>
+html {
+	height: 100%;
+	width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+	background-color: #1f1f1f;
+	background: -webkit-radial-gradient(#1f1f1f, #000000);
+	background: radial-gradient(#1f1f1f, #000000);
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	background: #000;
+	margin-bottom: 20px;
+	padding: 15px 0px;
+}
+.content-carousel {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+.owl-carousel {
+	width: calc(100% - 75px);
+}
+.owl-carousel div {
+	width: 100%;
+}
+.owl-carousel .owl-controls .owl-dot {
+	background-size: cover;
+	margin-top: 10px;
+}
+.owl-carousel .owl-dots {
+	position: absolute;
+	top: 0;
+	left: -75px;
+	width: 70px;
+	height: 100%;
+}
+.owl-carousel .owl-dot {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+</style>
+
+<script>
+    $(document).ready(function(){
+
+$(".owl-carousel").owlCarousel({    
+    loop:true,
+    items:1,
+    margin:0,
+    stagePadding: 0,
+    autoplay:false  
+});
+
+dotcount = 1;
+
+jQuery('.owl-dot').each(function() {
+    jQuery( this ).addClass( 'dotnumber' + dotcount);
+    jQuery( this ).attr('data-info', dotcount);
+    dotcount=dotcount+1;
+});
+
+slidecount = 1;
+
+jQuery('.owl-item').not('.cloned').each(function() {
+    jQuery( this ).addClass( 'slidenumber' + slidecount);
+    slidecount=slidecount+1;
+});
+
+jQuery('.owl-dot').each(function() {	
+    grab = jQuery(this).data('info');		
+    slidegrab = jQuery('.slidenumber'+ grab +' img').attr('src');
+    jQuery(this).css("background-image", "url("+slidegrab+")");  	
+});
+
+amount = $('.owl-dot').length;
+gotowidth = 100/amount;			
+jQuery('.owl-dot').css("height", gotowidth+"%");
+
+});
+</script>
+
+
+
 
     <div class="wrapper">
 
-        <div class="container">
+
+    
             <div class="page-info product-details">
                 <div class="row justify-content-left mb-4">
              
-<div class="col-12 col-sm-12 col-xxl-5">
-
-<div class="product-carousel mb-3">
-<div class="thumb-img">
-<div id="thumb1" class="item"><img src="images/product-thumb1.jpg" alt=""></div>
-<div id="thumb2" class="item"><img src="images/product-thumb2.jpg" alt=""></div>
-<div id="thumb3" class="item"><img src="images/product-thumb3.jpg" alt=""></div>
-<div id="thumb4" class="item"><img src="images/product-thumb4.jpg" alt=""></div>
-</div>
-
-<div class="large-img">
-    <div id="large1" class="item active"><img src="images/product-thumb1.jpg" alt=""></div>
-   <div id="large2" class="item"><img src="images/product-thumb2.jpg" alt=""></div>
-    <div id="large3" class="item"><img src="images/product-thumb3.jpg" alt=""></div>
-    <div id="large4" class="item"><img src="images/product-thumb4.jpg" alt=""></div>
+<div class="col-12 col-sm-5">
+    <div class="content-carousel">
+    <div class="owl-carousel product-carouel">
+        <div> <img src="https://tractive.com/blog/wp-content/uploads/2016/06/dog-would-not-drink-water-puppy-waterbowl-768x576.jpg"> </div>
+        <div> <img src="https://dummyimage.com/600x400/16c1f3/231f20.png&text=Carousel"> </div>
+        <div> <img src="https://dummyimage.com/600x400/fff200/231f20.png&text=Carousel"> </div>
+        <div> <img src="https://dummyimage.com/600x400/f48480/231f20.png&text=Carousel"> </div>
+        <div><img src="https://dummyimage.com/600x400/8dd8f8/231f20.png&text=Carousel"> </div>
+        <div><img src="https://dummyimage.com/600x400/fffac2/231f20.png&text=Carousel"> </div>
+      </div>
     </div>
-
-
-
-
 </div>
 
-</div>
+<script>
+ $(document).ready(function(){
 
+$(".owl-carousel").owlCarousel({    
+    loop:true,
+    items:1,
+    margin:0,
+    stagePadding: 0,
+    autoplay:false  
+});
 
-<div class="col-12 col-sm-6 col-xxl-3 mb-3">
+dotcount = 1;
+
+jQuery('.owl-dot').each(function() {
+    jQuery( this ).addClass( 'dotnumber' + dotcount);
+    jQuery( this ).attr('data-info', dotcount);
+    dotcount=dotcount+1;
+});
+
+slidecount = 1;
+
+jQuery('.owl-item').not('.cloned').each(function() {
+    jQuery( this ).addClass( 'slidenumber' + slidecount);
+    slidecount=slidecount+1;
+});
+
+jQuery('.owl-dot').each(function() {	
+    grab = jQuery(this).data('info');		
+    slidegrab = jQuery('.slidenumber'+ grab +' img').attr('src');
+    jQuery(this).css("background-image", "url("+slidegrab+")");  	
+});
+
+amount = $('.owl-dot').length;
+gotowidth = 100/amount;			
+jQuery('.owl-dot').css("height", gotowidth+"%");
+
+});
+</script>
+
+<div class="col-12 col-sm-3">
  <div class="product-info">
  <h3>ShortServ 2080R</h3>
  <p>Product Code: 2080R-15</p>
@@ -97,14 +219,14 @@
     <input type="number" id="1" value="1" min="1" max="9" />
     <button type="button" id="add" class="add">+</button>
 </div>
-<div class="button"><a href="shopping-cart.html" class="btn btn-link-white btn-primary">Add to Basket</a></div>
+<div class="button"><a href="#" class="btn btn-link-white btn-primary">Add to Basket</a></div>
 
 </div>
 
 
 </div>
 
-<div class="col-12 col-sm-6 col-xxl-4">
+<div class="col-12 col-sm-4">
 <div class="product-overview">
    <h2>Overview</h2>
    <p>The MDX-T2U server delivers high performance and scalability in a rack mount 2U form factor. The system provides a wide range of features and functionalities and vast storage capabilities and performance.</p>
@@ -601,22 +723,6 @@
     </div>
 
 
-    <div id="footer"></div>
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script>
-        $('.add').click(function () {
-    if ($(this).prev().val() < 9) {
-    $(this).prev().val(+$(this).prev().val() + 1);
-    }
-});
-$('.sub').click(function () {
-    if ($(this).next().val() > 1) {
-    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-    }
-});
-    </script>
    
 
 

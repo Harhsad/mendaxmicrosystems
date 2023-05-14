@@ -53,7 +53,14 @@ $(function(){
 <div class="product-desc">
     <h6>ShortServ 2080R</h6>
     <p>Product Code: 2080R-15</p>
-    <div class="plus-min">-1+</div>
+    <div class="qty-cart">
+        <div class="plus-min" id="field1">
+            <button type="button" id="sub" class="sub">-</button>
+            <input type="number" id="1" value="1" min="1" max="3" />
+            <button type="button" id="add" class="add">+</button>
+        </div>         
+        
+        </div>
     <div class="remove-btn"><a href="#"><img src="images/trash-icon.png" alt=""> Remove</a></div>
 </div></div>
 <div class="product-price"><h6><b>$2,599.00</b></h6></div>
@@ -70,7 +77,14 @@ $(function(){
     <div class="product-desc">
         <h6>ShortServ 2080R</h6>
         <p>Product Code: 2080R-15</p>
-        <div class="plus-min">-1+</div>
+        <div class="qty-cart">
+            <div class="plus-min" id="field1">
+                <button type="button" id="sub" class="sub">-</button>
+                <input type="number" id="1" value="1" min="1" max="3" />
+                <button type="button" id="add" class="add">+</button>
+            </div>         
+            
+            </div>
         <div class="remove-btn"><a href="#"><img src="images/trash-icon.png" alt=""> Remove</a></div>
     </div></div>
     <div class="product-price"><h6><b>$2,599.00</b></h6></div>
@@ -152,5 +166,17 @@ $(function(){
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.js"></script>
+<script>
+    $('.add').click(function () {
+if ($(this).prev().val() < 9) {
+$(this).prev().val(+$(this).prev().val() + 1);
+}
+});
+$('.sub').click(function () {
+if ($(this).next().val() > 1) {
+if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+}
+});
+</script>
 </body>
 </html>
