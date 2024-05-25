@@ -1546,7 +1546,7 @@ a.empty-cart {
     z-index: 2;
   }
   #header + div, #header + section {
-    margin-top: 60px;
+    margin-top: 70px;
   }
   header nav ul {
     text-align: center;
@@ -1817,6 +1817,11 @@ a.empty-cart {
   .product-box.box-cta {
     padding: 1em;
     font-size: 90%;
+  }
+  .heroheader {
+    min-height: 270px;
+    display: flex;
+    align-items: self-end;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
