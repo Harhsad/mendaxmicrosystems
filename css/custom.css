@@ -1811,6 +1811,13 @@ a.empty-cart {
   button.hamburger {
     order: 2;
   }
+  .product-box.box-cta:before, .product-box.box-cta:after {
+    display: none;
+  }
+  .product-box.box-cta {
+    padding: 1em;
+    font-size: 90%;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .contact-office {
