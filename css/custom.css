@@ -162,7 +162,7 @@ header {
   position: relative;
 }
 
-header .container {
+header .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
