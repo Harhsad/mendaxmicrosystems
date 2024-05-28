@@ -64,25 +64,25 @@
 <div class="col-lg-7 col-xl-5"> 
     
  
-
-        <div class="flexslider">
-            <ul class="slides">
-              <li data-thumb="images/product-thumb1.jpg">
-                <img src="images/product-thumb1.jpg" />
-              </li>
-              <li data-thumb="images/product-thumb2.jpg">
-                <img src="images/product-thumb2.jpg" />
-              </li>
-              <li data-thumb="images/product-thumb3.jpg">
-                <img src="images/product-thumb3.jpg" />
-              </li>
-              <li data-thumb="images/product-thumb4.jpg">
-                <img src="images/product-thumb4.jpg" />
-              </li>
-            </ul>
+  <div class="product-carousel mb-3">
+   
+    
+    <div class="large-img">
+        <div id="large1" class="item active"><img src="images/product-thumb1.jpg" alt=""></div>
+       <div id="large2" class="item"><img src="images/product-thumb2.jpg" alt=""></div>
+        <div id="large3" class="item"><img src="images/product-thumb3.jpg" alt=""></div>
+        <div id="large4" class="item"><img src="images/product-thumb4.jpg" alt=""></div>
+        </div>
+    
+        <div class="thumb-img">
+          <div id="thumb1" class="item"><img src="images/product-thumb1.jpg" alt=""></div>
+          <div id="thumb2" class="item"><img src="images/product-thumb2.jpg" alt=""></div>
+          <div id="thumb3" class="item"><img src="images/product-thumb3.jpg" alt=""></div>
+          <div id="thumb4" class="item"><img src="images/product-thumb4.jpg" alt=""></div>
           </div>
-
-
+    
+    
+    </div>
 
 
     </div>
@@ -213,44 +213,6 @@
       });
     });
   </script>
-
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
 </body>
 </html>
