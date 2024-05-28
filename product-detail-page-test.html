@@ -192,15 +192,15 @@
   <!-- jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript">
-    $(function(){
+    jQuery(function(){
       SyntaxHighlighter.all();
     });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
+    jQuery(window).load(function(){
+      jQuery('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
         start: function(slider){
-          $('body').removeClass('loading');
+          jQuery('body').removeClass('loading');
         }
       });
     });
